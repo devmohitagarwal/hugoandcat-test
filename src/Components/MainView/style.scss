@@ -1,0 +1,18 @@
+.slick-list {
+  margin: 0 -7px !important;
+}
+
+.slick-slide > div {
+  padding: 0 7px !important;
+}
+.mainViewWrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  .desktop-view.weather-view {
+    display: flex;
+    overflow-y: scroll;
+    justify-content: center;
+  }
+}

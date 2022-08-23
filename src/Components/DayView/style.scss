@@ -1,0 +1,103 @@
+@use "../../theme.scss" as *;
+
+.weather-view {
+  .weather-item {
+    height: 380px;
+    width: 220px !important;
+    max-width: 60vw;
+    color: #fff;
+    margin-right: 4px;
+    position: relative;
+    overflow: hidden;
+    .weather-item__date {
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+      font-weight: 100;
+      font-size: 12px;
+    }
+    .weather-item__icon {
+      display: flex;
+      justify-content: center;
+      img {
+        margin-top: 36px;
+        height: 54px;
+        width: 54px;
+      }
+    }
+
+    .weather-item__clouds {
+      margin-top: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      text-align: center;
+    }
+    .weather-item__degree-temp {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      margin-top: 36px;
+      .degree__number {
+        font-size: 48px;
+        font-weight: 500;
+      }
+      .degree__icon {
+        font-size: 34px;
+        font-weight: 100;
+      }
+      .degree__icon {
+        font-size: 28px;
+      }
+    }
+    .weather-item__faren-temp {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+    }
+    .weather-icon__floating img {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      left: -30px;
+      bottom: -50px;
+      opacity: 0.2;
+    }
+  }
+  .weather-item:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .weather-item:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .clear-sky {
+    background: linear-gradient($clear-sky-light, $clear-sky-dark);
+  }
+  .few-clouds {
+    background: linear-gradient($few-clouds-light, $few-clouds-dark);
+  }
+  .scattered-clouds {
+    background: linear-gradient($scattered-clouds-dark, $scattered-clouds-light);
+  }
+  .broken-clouds {
+    background: linear-gradient($broken-clouds-dark, $broken-clouds-light);
+  }
+  .shower-rain,
+  .light-rain {
+    background: linear-gradient($shower-rain-light, $shower-rain-dark);
+  }
+  .rain,.overcast-clouds {
+    background: linear-gradient($rain-light, $rain-dark);
+  }
+  .thunderstorm {
+    background: linear-gradient($thunderstorm-light, $thunderstorm-dark);
+  }
+  .snow {
+    background: linear-gradient($snow-light, $snow-dark);
+  }
+  .mist {
+    background: linear-gradient($mist-light, $mist-dark);
+  }
+}
