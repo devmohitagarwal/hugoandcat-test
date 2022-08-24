@@ -12,8 +12,8 @@ function MainView() {
   const [weatherData, setWeatherData] = useState([]);
 
   useEffect(() => {
+    //Initialize data fetch, cleans the data and set it to the state
     FetchWeather().then((resp) => {
-      debugger;
       setWeatherData(filterData(resp.data));
     });
   }, []);

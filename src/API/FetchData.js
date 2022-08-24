@@ -12,12 +12,12 @@ const FetchWeather = () => {
       method: "post",
       url: URL,
     })
-    .then((res) => {
-      resolve(res);
-    })
-    .catch((err) => {
-      return err;
-    })
+      .then((res) => {
+        resolve(res);
+      })
+      .catch((err) => {
+        return err;
+      })
   );
 };
 

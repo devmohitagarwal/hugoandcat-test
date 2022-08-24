@@ -86,9 +86,10 @@
   }
   .shower-rain,
   .light-rain {
-    background: linear-gradient($shower-rain-light, $shower-rain-dark);
+    background: linear-gradient($shower-rain-dark, $shower-rain-light);
   }
-  .rain,.overcast-clouds {
+  .rain,
+  .overcast-clouds {
     background: linear-gradient($rain-light, $rain-dark);
   }
   .thunderstorm {
